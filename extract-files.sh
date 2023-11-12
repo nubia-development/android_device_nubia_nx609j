@@ -39,7 +39,7 @@ function blob_fixup() {
             ;;
         vendor/lib64/android.hardware.gatekeeper@1.0.so | vendor/lib64/vendor.goodix.hardware.fingerprint@1.0.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+            grep -q libhidlbase_shim.so "${2}" || "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
             ;;
         vendor/lib/libSonyIMX318PdafLibrary.so | vendor/lib/libarcsoft_beautyshot.so | vendor/lib/libarcsoft_beautyshot_image_algorithm.so | vendor/lib/libarcsoft_beautyshot_video_algorithm.so | vendor/lib/libarcsoft_high_dynamic_range.so | vendor/lib/libarcsoft_low_light_shot.so | vendor/lib/libarcsoft_night_shot.so | vendor/lib/libarcsoft_picauto.so | vendor/lib64/libarcsoft_beautyshot.so | vendor/lib64/libarcsoft_beautyshot_image_algorithm.so | vendor/lib64/libarcsoft_beautyshot_video_algorithm.so | vendor/lib64/libarcsoft_low_light_shot.so | vendor/lib64/libarcsoft_night_shot.so)
             [ "$2" = "" ] && return 0

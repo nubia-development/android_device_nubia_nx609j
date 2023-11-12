@@ -76,9 +76,11 @@ PRODUCT_PACKAGES += \
 # Update this list with what each blob is actually for
 # libstdc++: camera.msm8998
 # libbinder_shim: libgoodixfingerprintd_binder.so
+# libhidlbase_shim: android.hardware.gatekeeper@1.0.so & vendor.goodix.hardware.fingerprint@1.0.so
 PRODUCT_PACKAGES += \
     libstdc++_vendor \
-    libbinder_shim
+    libbinder_shim \
+    libhidlbase_shim
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libbinderthreadstate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinderthreadstate.so
