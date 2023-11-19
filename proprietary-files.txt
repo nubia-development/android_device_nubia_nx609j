@@ -82,7 +82,7 @@ lib/libmmcamera_nubiacustpro.so:vendor/lib/libmmcamera_nubiacustpro.so
 lib/libmpbase.so:vendor/lib/libmpbase.so
 lib/libnubia_effect.so:vendor/lib/libnubia_effect.so|bfb562a80ce4af7b5965bcfe20c71a2c8bc3e16d
 
-lib64/libNubiaImageAlgorithm.so:vendor/lib64/libNubiaImageAlgorithm.so
+lib64/libNubiaImageAlgorithm.so:vendor/lib64/libNubiaImageAlgorithm.so|9010b1df57e2a7cfedf6e12ead08ac51744ccefe
 lib64/libarcsoft_beautyshot.so:vendor/lib64/libarcsoft_beautyshot.so|a47b4f52e015b440c6be72280f144a1ebd2e123e
 lib64/libarcsoft_beautyshot_image_algorithm.so:vendor/lib64/libarcsoft_beautyshot_image_algorithm.so|84b9b7407fa1d91c2a5f076f31a1f55eabb5bdbe
 lib64/libarcsoft_beautyshot_video_algorithm.so:vendor/lib64/libarcsoft_beautyshot_video_algorithm.so|bf5f804147d1332f7de658d94ce21cda3618aed9
