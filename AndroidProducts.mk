@@ -15,8 +15,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_nx609j.mk
-
-COMMON_LUNCH_CHOICES := \
-    lineage_nx609j-user \
-    lineage_nx609j-userdebug \
-    lineage_nx609j-eng
