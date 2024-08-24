@@ -23,9 +23,6 @@ DEVICE_PATH := device/nubia/nx609j
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := NX609J,nx609j
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_nx609j_defconfig
 
